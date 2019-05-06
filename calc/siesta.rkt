@@ -27,7 +27,8 @@
          (open-output-file "error.log" #:exists 'truncate)
          siesta-exec)))
 
-    (displayln sym-name) sp))
+    (displayln sym-name)
+    (values (normalize-path calc-dir) sp)))
 
 
 (provide (all-defined-out))
